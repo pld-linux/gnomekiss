@@ -1,16 +1,17 @@
 Summary:	Implementation of French-KiSS for GNOME
 Summary(pl):	Implementacja French-KiSS dla GNOME
 Name:		gnomekiss
-Version:	1.0
+Version:	1.2
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
 Group(de):	X11/Applikationen/Spiele
 Group(pl):	X11/Aplikacje/Gry
 Source0:	http://www.ecs.soton.ac.uk/~njl98r/code/kiss/%{name}-%{version}.tar.gz
-BuildRequires:	gnome-libs-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	gettext-devel
+BuildRequires:	gnome-libs-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define         _prefix         /usr/X11R6
@@ -32,6 +33,7 @@ implementacj± Kissekae Set System (czy jako¶ tak).
 
 %build
 rm -f missing
+gettextize --copy --force
 aclocal -I macros
 autoconf
 automake -a -c
@@ -45,10 +47,12 @@ rm -rf $RPM_BUILD_ROOT
 
 gzip -9nf README NEWS AUTHORS
 
+%find_lang %{name}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc *.gz
 %attr(755,root,root) %{_bindir}/*
