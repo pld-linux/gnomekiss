@@ -31,7 +31,6 @@ implementacj± Kissekae Set System (czy jako¶ tak).
 %patch0 -p1
 
 %build
-rm -f missing
 %{__gettextize}
 %{__aclocal} -I macros
 %{__autoconf}
@@ -46,7 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 # duplicates es
-rm -rf $RPM_BUILD_ROOT/%{_datadir}/locale/es_ES
+rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/es_ES
 %find_lang %{name}
 
 %clean
