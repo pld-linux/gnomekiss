@@ -33,8 +33,8 @@ implementacj± Kissekae Set System (czy jako¶ tak).
 rm -f missing
 gettextize --copy --force
 aclocal -I macros
-autoconf
-automake -a -c -f
+%{__autoconf}
+%{__automake}
 %configure
 %{__make}
 
