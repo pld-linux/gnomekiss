@@ -12,7 +12,6 @@ BuildRequires:	gettext-devel
 BuildRequires:	gnome-libs-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define         _prefix         /usr/X11R6
 
 %description
 GnomeKiss is an implementation of French-KiSS for the GNOME desktop
