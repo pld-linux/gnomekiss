@@ -32,7 +32,7 @@ implementacj± Kissekae Set System (czy jako¶ tak).
 %build
 rm -f missing
 %{__gettextize}
-aclocal -I macros
+%{__aclocal} -I macros
 %{__autoconf}
 %{__automake}
 %configure
