@@ -1,7 +1,7 @@
-Summary:	Implementation of French-KiSS for GNOME.
-Summary(pl):	Implementacja French-KiSS dla GNOME.
+Summary:	Implementation of French-KiSS for GNOME
+Summary(pl):	Implementacja French-KiSS dla GNOME
 Name:		gnomekiss
-Version:	0.9
+Version:	0.9.1
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
@@ -29,12 +29,17 @@ implementacj± Kissekae Set System (czy jako¶ tak).
 %setup -q
 
 %build
-%configure2_13
+rm -f missing
+aclocal -I macros
+autoconf
+automake -a -c
+%configure
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install DESTDIR="$RPM_BUILD_ROOT"
+
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 gzip -9nf README NEWS AUTHORS
 
