@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://www.ecs.soton.ac.uk/~njl98r/code/kiss/%{name}-%{version}.tar.gz
+# Source0-md5:	69054d87a169a57b1b049bdc64593330
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
