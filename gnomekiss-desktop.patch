@@ -1,0 +1,23 @@
+diff -Nur gnomekiss-1.6/gnomekiss.desktop gnomekiss-1.6-desktop/gnomekiss.desktop
+--- gnomekiss-1.6/gnomekiss.desktop	2002-05-29 06:36:26.000000000 +0200
++++ gnomekiss-1.6-desktop/gnomekiss.desktop	2003-07-25 01:09:30.000000000 +0200
+@@ -8,3 +8,5 @@
+ Icon=gnomekiss/besito_sinfondo.png
+ Terminal=0
+ Type=Application
++Categories=Application;Game;
++# vi: encoding=utf-8
+diff -Nur gnomekiss-1.6/Makefile.am gnomekiss-1.6-desktop/Makefile.am
+--- gnomekiss-1.6/Makefile.am	2003-05-10 00:59:48.000000000 +0200
++++ gnomekiss-1.6-desktop/Makefile.am	2003-07-25 01:00:13.000000000 +0200
+@@ -13,8 +13,8 @@
+ 	    fi \
+ 	  done \
+ 	fi; \
+-	$(mkinstalldirs) $(DESTDIR)@GNOME_DESKTOP_DIR@/Games; \
+-	$(INSTALL_DATA) gnomekiss.desktop $(DESTDIR)@GNOME_DESKTOP_DIR@/Games/; 
++	$(mkinstalldirs) $(DESTDIR)$(prefix)/share/applications/; \
++	$(INSTALL_DATA) gnomekiss.desktop $(DESTDIR)$(prefix)/share/applications; 
+ 
+ dist-hook:
+ 	if test -d pixmaps; then \
