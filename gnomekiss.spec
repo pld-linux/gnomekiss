@@ -2,7 +2,7 @@ Summary:	Implementation of French-KiSS for GNOME
 Summary(pl):	Implementacja French-KiSS dla GNOME
 Name:		gnomekiss
 Version:	1.6
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://www.ecs.soton.ac.uk/~njl98r/code/kiss/%{name}-%{version}.tar.gz
@@ -45,6 +45,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+# duplicates es
+rm -rf $RPM_BUILD_ROOT/%{_datadir}/locale/es_ES
 %find_lang %{name}
 
 %clean
