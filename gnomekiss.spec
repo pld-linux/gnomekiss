@@ -5,8 +5,6 @@ Version:	1.2
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
-Group(de):	X11/Applikationen/Spiele
-Group(pl):	X11/Aplikacje/Gry
 Source0:	http://www.ecs.soton.ac.uk/~njl98r/code/kiss/%{name}-%{version}.tar.gz
 BuildRequires:	autoconf
 BuildRequires:	automake
