@@ -2,7 +2,7 @@ Summary:	Implementation of French-KiSS for GNOME
 Summary(pl):	Implementacja French-KiSS dla GNOME
 Name:		gnomekiss
 Version:	1.6
-Release:	4
+Release:	5
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://www.ecs.soton.ac.uk/~njl98r/code/kiss/%{name}-%{version}.tar.gz
