@@ -1,7 +1,7 @@
 Summary:	Implementation of French-KiSS for GNOME
 Summary(pl):	Implementacja French-KiSS dla GNOME
 Name:		gnomekiss
-Version:	0.9.1
+Version:	1.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
