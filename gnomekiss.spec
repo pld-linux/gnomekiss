@@ -1,12 +1,15 @@
+# TODO:
+# - patch Makefile.in to proper handle .desktop
+# - patch .desktop
 Summary:	Implementation of French-KiSS for GNOME
 Summary(pl):	Implementacja French-KiSS dla GNOME
 Name:		gnomekiss
-Version:	1.2
-Release:	1
+Version:	1.6
+Release:	0.9
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://www.ecs.soton.ac.uk/~njl98r/code/kiss/%{name}-%{version}.tar.gz
-# Source0-md5:	69054d87a169a57b1b049bdc64593330
+# Source0-md5:	1b25fdb9c9e2959cd9f31c7550a8b0fa
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
@@ -41,7 +44,8 @@ rm -f missing
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %find_lang %{name}
 
@@ -52,4 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README NEWS AUTHORS
 %attr(755,root,root) %{_bindir}/*
+%{_mandir}/man1/*
 %{_pixmapsdir}/*
