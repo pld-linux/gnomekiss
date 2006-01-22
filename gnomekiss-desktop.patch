@@ -1,13 +1,17 @@
 diff -Nur gnomekiss-1.6/gnomekiss.desktop gnomekiss-1.6-desktop/gnomekiss.desktop
 --- gnomekiss-1.6/gnomekiss.desktop	2002-05-29 06:36:26.000000000 +0200
 +++ gnomekiss-1.6-desktop/gnomekiss.desktop	2003-07-25 01:09:30.000000000 +0200
-@@ -1,4 +1,5 @@
+@@ -1,10 +1,13 @@
  [Desktop Entry]
 +Encoding=UTF-8
  Name=GnomeKiSS
  Name[es]=GnomeKiSS
- Comment=Gnome's KiSSekae dolls viewer
-@@ -8,3 +9,5 @@
+-Comment=Gnome's KiSSekae dolls viewer
+-Comment[es]=EL visor de muñecas KiSSekae de Gnome
++Comment=GNOME's KiSSekae dolls viewer
++Comment[es]=EL visor de muÃ±ecas KiSSekae de GNOME
+ TryExec=gnomekiss
+ Exec=gnomekiss
  Icon=gnomekiss/besito_sinfondo.png
 -Terminal=0
 +Terminal=false
