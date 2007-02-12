@@ -1,5 +1,5 @@
 Summary:	Implementation of French-KiSS for GNOME
-Summary(pl):	Implementacja French-KiSS dla GNOME
+Summary(pl.UTF-8):   Implementacja French-KiSS dla GNOME
 Name:		gnomekiss
 Version:	1.6
 Release:	6
@@ -20,11 +20,11 @@ environment, using GNOME, GTK+ and the X Window System. French KiSS is
 an enhanced KiSS/GS for scriptable dolls, where KiSS is an
 abbreviation for Kisekae Set System (or something).
 
-%description -l pl
-GnomeKiss jest implementacj± French-KiSS dla desktopu GNOME.
-Wykorzystuje GNOME, GTK+ i ¶rodowisko X Window. French KiSS jest
+%description -l pl.UTF-8
+GnomeKiss jest implementacjÄ… French-KiSS dla desktopu GNOME.
+Wykorzystuje GNOME, GTK+ i Å›rodowisko X Window. French KiSS jest
 rozszerzonym KiSS/GS do oskryptowanych lalek, podczas gdy KiSS jest
-implementacj± Kissekae Set System (czy jako¶ tak).
+implementacjÄ… Kissekae Set System (czy jakoÅ› tak).
 
 %prep
 %setup -q
