@@ -1,5 +1,5 @@
 Summary:	Implementation of French-KiSS for GNOME
-Summary(pl.UTF-8):   Implementacja French-KiSS dla GNOME
+Summary(pl.UTF-8):	Implementacja French-KiSS dla GNOME
 Name:		gnomekiss
 Version:	1.6
 Release:	6
