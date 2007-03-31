@@ -1,3 +1,4 @@
+# NOTE: version 2.0 for GNOME 2 available
 Summary:	Implementation of French-KiSS for GNOME
 Summary(pl.UTF-8):	Implementacja French-KiSS dla GNOME
 Name:		gnomekiss
@@ -8,6 +9,7 @@ Group:		X11/Applications/Games
 Source0:	http://www.ecs.soton.ac.uk/~njl98r/code/kiss/%{name}-%{version}.tar.gz
 # Source0-md5:	1b25fdb9c9e2959cd9f31c7550a8b0fa
 Patch0:		%{name}-desktop.patch
+URL:		http://www.ecs.soton.ac.uk/~njl98r/code/kiss/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
