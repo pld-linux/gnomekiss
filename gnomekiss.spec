@@ -12,7 +12,7 @@ Patch0:		%{name}-desktop.patch
 URL:		http://www.ecs.soton.ac.uk/~njl98r/code/kiss/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gnome-libs-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
